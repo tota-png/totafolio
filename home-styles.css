@@ -264,7 +264,7 @@ section.scroll-container {
 footer {
   position:relative;
   padding-left:240px;
-  font-family:AesthetNova;
+  font-family:AesthetNova, sans-serif;
   font-weight:300;
   height:30px;
   display:flex;
