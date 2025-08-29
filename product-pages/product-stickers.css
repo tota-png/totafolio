@@ -1,0 +1,146 @@
+/* Font Setup */
+
+/* DECOY */
+@font-face {
+font-family:"Decoy";
+src:url("../fonts/Decoy-font/decoy.otf");
+font-weight:normal;
+font-style:normal;
+}
+
+@font-face {
+font-family:"Decoy";
+src:url("../fonts/Decoy-font/decoy-light.otf");
+font-weight:100;
+font-style:italic;
+}
+
+@font-face {
+font-family:"Decoy";
+src:url("../fonts/Decoy-font/decoy-medium.otf");
+font-weight:500;
+font-style:italic;
+}
+
+@font-face {
+font-family:"Decoy";
+src:url("../fonts/Decoy-font/decoy-black.otf");
+font-weight:bold;
+font-style:italic;
+}
+
+/* AESTHET NOVA */
+
+@font-face {
+font-family:"AesthetNova";
+src:url("../fonts/Aesthet-Nova/aesthet-nova.otf");
+font-weight:normal;
+font-style:normal;
+}
+
+@font-face {
+font-family:"AesthetNova";
+src:url("../fonts/Aesthet-Nova/aesthet-nova-light.otf");
+font-weight:100;
+font-style:normal;
+}
+
+@font-face {
+font-family:"AesthetNova";
+src:url("../fonts/Aesthet-Nova/aesthet-nova-medium.otf");
+font-weight:500;
+font-style:normal;
+}
+
+@font-face {
+font-family:"AesthetNova";
+src:url("../fonts/Aesthet-Nova/aesthet-nova-black.otf");
+font-weight:bold;
+font-style:normal;
+}
+
+/* End of Font Setup */
+
+* {
+	box-sizing:border-box
+}
+
+/* HEADER */
+
+header {
+	font-family:AesthetNova, sans-serif;
+	font-weight:500;
+	background-color:#b6e23d;
+	position:fixed;
+	top:0;
+	left:0;
+	height:70px;
+	width:100%;
+	display:flex;
+	flex-direction:row;
+	border-bottom: 1px solid #44510d;
+	z-index:1;
+}
+
+.empty {
+	height:100%;
+	width:50%;
+	/*border:1px solid black;*/
+}
+
+.navbar {
+	width:50%;
+	height:100%;
+	/*border:1px solid black;*/
+	display:flex;
+	flex-direction:row;
+	justify-content:flex-end;
+	margin-right:60px;
+}
+
+.navbar a {
+	height:100%;
+	font-size:24px;
+	width:50%;
+	max-width:200px;
+	color:#44510d;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	padding:5px;
+		text-decoration:none;
+
+}
+
+.navbar a:visited {
+	text-decoration:none;
+	color:#44510d;
+}
+
+.navbar a:hover {
+	background-color:#82992b;
+	color:#fffdee;
+	font-weight:normal;
+	cursor:pointer;
+}
+
+/* MAIN */
+
+body {
+	background-color:#fffdee;
+	height:100%;
+}
+
+html,body {
+	min-height:100%;
+}
+
+main {
+	padding-top:150px;
+	height:700px;
+	display:flex;
+	flex-direction:row;
+	align-items:flex-start;
+	flex-wrap:nowrap;
+}
+

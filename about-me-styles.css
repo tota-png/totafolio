@@ -1,0 +1,354 @@
+/* Font Setup */
+
+/* DECOY */
+@font-face {
+font-family:"Decoy";
+src:url("./fonts/Decoy-font/decoy.otf");
+font-weight:normal;
+font-style:normal;
+}
+
+@font-face {
+font-family:"Decoy";
+src:url("./fonts/Decoy-font/decoy-light.otf");
+font-weight:100;
+font-style:italic;
+}
+
+@font-face {
+font-family:"Decoy";
+src:url("./fonts/Decoy-font/decoy-medium.otf");
+font-weight:500;
+font-style:italic;
+}
+
+@font-face {
+font-family:"Decoy";
+src:url("./fonts/Decoy-font/decoy-black.otf");
+font-weight:bold;
+font-style:italic;
+}
+
+/* AESTHET NOVA */
+
+@font-face {
+font-family:"AesthetNova";
+src:url("./fonts/Aesthet-Nova/aesthet-nova.otf");
+font-weight:normal;
+font-style:normal;
+}
+
+@font-face {
+font-family:"AesthetNova";
+src:url("./fonts/Aesthet-Nova/aesthet-nova-light.otf");
+font-weight:100;
+font-style:normal;
+}
+
+@font-face {
+font-family:"AesthetNova";
+src:url("./fonts/Aesthet-Nova/aesthet-nova-medium.otf");
+font-weight:500;
+font-style:normal;
+}
+
+@font-face {
+font-family:"AesthetNova";
+src:url("./fonts/Aesthet-Nova/aesthet-nova-black.otf");
+font-weight:bold;
+font-style:normal;
+}
+
+/* End of Font Setup */
+
+* {
+	box-sizing:border-box
+}
+
+/* HEADER */
+
+header {
+	font-family:AesthetNova, sans-serif;
+	font-weight:500;
+	background-color:#b6e23d;
+	position:fixed;
+	top:0;
+	left:0;
+	height:70px;
+	width:100%;
+	display:flex;
+	flex-direction:row;
+	border-bottom: 1px solid #44510d;
+	z-index:1;
+}
+
+.empty {
+	height:100%;
+	width:50%;
+	/*border:1px solid black;*/
+}
+
+.navbar {
+	width:50%;
+	height:100%;
+	/*border:1px solid black;*/
+	display:flex;
+	flex-direction:row;
+	justify-content:flex-end;
+	margin-right:60px;
+}
+
+.navbar a {
+	height:100%;
+	font-size:24px;
+	width:50%;
+	max-width:200px;
+	color:#44510d;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	padding:5px;
+		text-decoration:none;
+
+}
+
+.navbar a:visited {
+	text-decoration:none;
+	color:#44510d;
+}
+
+.navbar a:hover {
+	background-color:#82992b;
+	color:#fffdee;
+	font-weight:normal;
+	cursor:pointer;
+}
+
+/* MAIN */
+
+body {
+	background-color:#fffdee;
+	height:100%;
+}
+
+html,body {
+	min-height:100%;
+}
+
+main {
+	/*margin-top: 70px;*/
+	padding-top:-20px;
+	height:700px;
+}
+
+.mid-gridline {
+	position:fixed;
+	left:0;
+	width:50%;
+	height:100%;
+	border-right:2px dashed red;
+	opacity:0;
+}
+
+h1 {
+	font-family:Decoy;
+	font-style:normal;
+	font-weight:600;
+	font-size:40px;
+	padding: 0;
+	margin: 10px 0 10px 0;
+}
+
+#about-text {
+	/*border:1px solid red;*/
+	height:60%;
+	width:500px;
+	position:absolute;
+	top:130px;
+	left:250px;
+}
+
+#about-text p {
+	font-family:AesthetNova;
+	font-weight:100;
+	font-size:22px;
+	line-height:1.2em;
+	margin-top:0;
+}
+
+.about-image {
+	/*border:1px solid red;*/
+	height:60%;
+	width:500px;
+	position:absolute;
+	top:150px;
+	left:890px;
+}
+
+.img-container img {
+	height:410px;
+	width:60%;
+	border-top-right-radius:150px;
+	border-top-left-radius:150px;
+	object-fit:cover;
+	object-position:-255px 10%;
+	border:1px solid black;
+}
+
+#magnets {
+	height:410px;
+	width:350px;
+	/*border:1px solid green;*/
+	position:absolute;
+	left:865px;
+	top:150px;
+}
+
+.magnet {
+	height:1.3em;
+	background-color:white;
+	border:1px solid black;
+	box-shadow: -3px 3px black;
+	font-family:AesthetNova;
+	font-weight:100;
+	font-size:20px;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	text-align:center;
+	scale:150%;
+	cursor:default;
+}
+
+#magnet-1 {
+	width:80px;
+	position:relative;
+	top:50px;
+	left:30px;
+	transform:rotate(-12deg);
+}
+
+#magnet-2 {
+	width:70px;
+	position:relative;
+	top:100px;
+	left:260px;
+	transform:rotate(10deg)
+}
+
+#magnet-3 {
+	width:25px;
+	position:relative;
+	top:170px;
+	left:25px;
+	transform:rotate(-9deg)
+}
+
+#magnet-4 {
+	width:35px;
+	position:relative;
+	top:220px;
+	left:210px;
+	transform:rotate(10deg)
+}
+
+#magnet-5 {
+	width:75px;;
+	position:relative;
+	top:243px;
+	left:250px;
+	transform:rotate(-8deg)
+}
+
+#stickies {
+	/*border:1px solid blue;*/
+	height:30%;
+	width:500px;
+	position:absolute;
+	left:285px;
+	top:400px;
+}
+
+.sticker {
+	height:60px;
+	width:120px;
+	border:1px solid black;
+	border-radius:55%;
+	box-shadow:-1px 2px black;
+	font-family:AesthetNova;
+	font-weight:500;
+	font-size:19px;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	text-align:center;
+}
+
+.sticker:hover {
+	scale:105%;
+	cursor:default;
+}
+
+#sticker-1 {
+	background-color:#66bef1;
+	position:relative;
+	left:140px;
+	top:10px;
+	transform:rotate(-7deg)
+}
+
+#sticker-2 {
+	background-color:#b6e23d;
+	position:relative;
+	left:-10px;
+	top:10px;
+	transform:rotate(7deg)
+}
+
+#sticker-3 {
+	background-color:#fd72ae;
+	position:relative;
+	left:295px;
+	top:-50px;
+	padding-top:7px;
+	transform:rotate(6deg)
+}
+
+#sticker-4 {
+	background-color:#fcb705;
+	position:relative;
+	left:150px;
+	top:-80px;
+	transform:rotate(5deg)
+}
+
+#sticker-5 {
+	background-color:#ff981c;
+	position:relative;
+	left:30px;
+	top:-70px;
+	transform:rotate(-8deg)
+}
+
+#sticker-6 {
+	background-color:#ff5065;
+	position:relative;
+	left:240px;
+	top:-120px;
+	transform:rotate(7deg)
+}
+
+/* FOOTER */
+footer {
+  position:relative;
+  padding-left:240px;
+  font-family:AesthetNova;
+  font-weight:300;
+  height:30px;
+  display:flex;
+  justify-content:flex-start;
+  align-content:flex-end;
+  padding-bottom:10px;
+  margin-bottom:20px;
+  padding-top:10px;
+}
