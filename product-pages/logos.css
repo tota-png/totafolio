@@ -136,11 +136,165 @@ html,body {
 }
 
 main {
-	padding-top:150px;
-	height:700px;
+	padding-top:120px;
+	height:1070px;
 	display:flex;
-	flex-direction:row;
-	align-items:flex-start;
+	flex-direction:column;
+	justify-content:flex-start;
+	align-items:center;
 	flex-wrap:nowrap;
 }
 
+/* PAGE-DESCRIPTION */
+
+.product-general {
+	/*border:1px solid red;*/
+	align-items:flex-start;
+	width:60%;
+	display:flex;
+	flex-direction:row;
+}
+
+.product-general p {
+	font-family:AesthetNova,sans-serif;
+	font-weight:300;
+	font-size:22px;
+	margin-bottom:0;
+}
+
+.product-general h1 {
+	font-family:Decoy;
+	font-style:normal;
+	font-weight:600;
+	font-size:40px;
+	margin-top:0;
+	padding-top:0;
+}
+
+#description {
+	/*border:1px solid blue;*/
+	width: 100%;
+	line-height:1.7em;
+}
+
+#text-part {
+	/*border:1px solid red;*/
+	width:100%;
+}
+
+#cover-image {
+	/*border:1px solid blue;*/
+	width:0%;
+	height:14.38em;
+}
+
+/* PROJECTS */
+
+#product-gallery {
+	/*border:1px solid black;*/
+	height:500px;
+	width: 60%;
+}
+
+.gallery {
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:center;
+	padding-top:30px;
+	
+}
+
+div.img-frame {
+	width:250px;
+	height:310px;
+	margin:10px;
+	background-color:white;
+	border:1px solid black;
+	box-shadow: -5px 5px black;
+	transform:rotate(-2deg);
+}
+
+div.img-frame:hover {
+	transform:rotate(2deg);
+	cursor:pointer;
+}
+
+.img-frame img {
+	height:220px;
+	width:220px;
+	object-fit:cover;
+	margin-top:20px;
+	border:1px solid black;
+}
+
+.img-title {
+	display:flex;
+	font-family:AesthetNova, sans-serif;
+	font-size:20px;
+	font-weight:300;
+	text-align:center;
+	align-items:center;
+	justify-content:center;
+}
+
+#rileyjump {
+	position:absolute;
+	left:450px;
+	display:flex;
+	justify-content:center;
+	scale:80%;
+	top:-10px;
+}
+
+.prod-story {
+	/*border:1px solid red;*/
+	margin-left:25px;
+	font-family:AesthetNova, sans-serif;
+	font-size:20px;
+	font-weight:300;
+	line-height:2.7ex;
+}
+
+.img-containing {
+	/*border:1px solid red;*/
+	margin-top:75px;
+	width:60%;
+}
+
+.non-image {
+	padding:40px;
+	justify-content:center;
+	width:80%;
+}
+
+.popup-window {
+	background-color:white;
+	border:1px solid black;
+	border-radius:20px;
+	height:20em;
+	box-shadow: -5px 5px black;
+	margin-top:10px;
+	width:50%;
+	position:fixed;
+	top:200px;
+}
+
+button {
+	border: none;
+    background:none;
+}
+
+/* FOOTER */
+footer {
+  position:relative;
+  padding-left:240px;
+  font-family:AesthetNova, sans-serif;
+  font-weight:300;
+  height:30px;
+  display:flex;
+  justify-content:flex-start;
+  align-content:flex-end;
+  padding-bottom:20px;
+  margin-bottom:30px;
+  padding-top:10px;
+}

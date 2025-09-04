@@ -137,7 +137,7 @@ html,body {
 
 main {
 	padding-top:120px;
-	height:1000px;
+	height:1070px;
 	display:flex;
 	flex-direction:column;
 	justify-content:flex-start;
@@ -242,6 +242,7 @@ div.img-frame {
 
 div.img-frame:hover {
 	transform:rotate(2deg);
+	cursor:pointer;
 }
 
 .img-frame img {
@@ -287,7 +288,7 @@ div.img-frame:hover {
 }
 
 .non-image {
-	margin-top:75px;
+	padding:40px;
 	justify-content:center;
 	width:80%;
 }
@@ -307,4 +308,19 @@ div.img-frame:hover {
 button {
 	border: none;
     background:none;
+}
+
+/* FOOTER */
+footer {
+  position:relative;
+  padding-left:240px;
+  font-family:AesthetNova, sans-serif;
+  font-weight:300;
+  height:30px;
+  display:flex;
+  justify-content:flex-start;
+  align-content:flex-end;
+  padding-bottom:20px;
+  margin-bottom:30px;
+  padding-top:10px;
 }
